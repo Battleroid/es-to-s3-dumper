@@ -2,6 +2,10 @@
 
 For dumping an Elasticsearch index contents to S3. Pretty straight forward.
 
+## why
+
+We were using elasticdump, which works well, but for long running dumps it has an occasionally memory leak and requires us to slowly up the limits in kubernetes to avoid OOM kills. This is simpler and pretty stable on memory usage AFAICT.
+
 ## usage
 
 ```
