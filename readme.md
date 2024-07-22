@@ -6,6 +6,8 @@ For dumping an Elasticsearch index contents to S3. Pretty straight forward.
 
 We were using elasticdump, which works well, but for long running dumps it has an occasionally memory leak and requires us to slowly up the limits in kubernetes to avoid OOM kills. This is simpler and pretty stable on memory usage AFAICT.
 
+It was also a fun little exercise to learn some more Go.
+
 ## usage
 
 ```
